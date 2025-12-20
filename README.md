@@ -1,6 +1,10 @@
 # Projeto-Pagina-Conversora-de-Moedas
 Conversor de moedas moderno e responsivo, com interface animada, seleção visual por bandeiras e conversão instantânea entre diferentes moedas. Desenvolvido com HTML, CSS e JavaScript puro, priorizando usabilidade e design clean.
+
+## 🎥 Demonstração
 <img width="1130" height="767" alt="image" src="https://github.com/user-attachments/assets/812e83d5-3dbd-4327-863f-2969d9d0a4a0" />
+
+https://github.com/user-attachments/assets/fbc7a407-858e-4046-bf95-fd4314d74bf4
 
 
 # 💱 Conversor de Moedas
