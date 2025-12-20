@@ -3,14 +3,14 @@ let currencies = {
     code: "br",
     name: "Real Brasileiro",
     symbol: "R$",
-    rate: 1
+    rate: 1,
   },
   to: {
     code: "eu",
     name: "Euro",
     symbol: "€",
-    rate: 5.6
-  }
+    rate: 5.6,
+  },
 };
 
 let currentTarget = null;
@@ -28,7 +28,6 @@ function openList(element, target) {
   currencyList.style.display = "block";
 }
 
-
 function selectCurrency(code, name, symbol, rate) {
   currencies[currentTarget] = { code, name, symbol, rate };
 
@@ -43,9 +42,8 @@ function selectCurrency(code, name, symbol, rate) {
   if (currentTarget === "from") {
     document.getElementById("currencySymbol").textContent = symbol;
   }
+   convert()
 }
-
-
 
 function swapCurrencies() {
   const temp = currencies.from;
@@ -64,6 +62,7 @@ function swapCurrencies() {
 
   document.getElementById("currencySymbol").textContent =
     currencies.from.symbol;
+    convert()
 }
 
 function convert() {
@@ -82,19 +81,21 @@ function convert() {
   const valueInBase = value * from.rate;
   const converted = valueInBase / to.rate;
 
-  document.getElementById("fromValue").textContent =
-    `${from.symbol} ${value.toFixed(2)}`;
+  document.getElementById("fromValue").textContent = `${
+    from.symbol
+  } ${value.toFixed(2)}`;
 
-  document.getElementById("toValue").textContent =
-    `${to.symbol} ${converted.toFixed(2)}`;
+  document.getElementById("toValue").textContent = `${
+    to.symbol
+  } ${converted.toFixed(2)}`;
 
-  document.getElementById("fromFlag").src =
-    `https://flagcdn.com/w40/${from.code}.png`;
+  document.getElementById(
+    "fromFlag"
+  ).src = `https://flagcdn.com/w40/${from.code}.png`;
 
-  document.getElementById("toFlag").src =
-    `https://flagcdn.com/w40/${to.code}.png`;
+  document.getElementById(
+    "toFlag"
+  ).src = `https://flagcdn.com/w40/${to.code}.png`;
 
   document.getElementById("resultBox").classList.remove("hidden");
 }
-
-

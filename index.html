@@ -39,6 +39,26 @@
               🇺🇸 Dólar Americano
             </li>
             <li onclick="selectCurrency('eu','Euro','€',5.6)">🇪🇺 Euro</li>
+            <li onclick="selectCurrency('ca','Dólar Canadense','C$',3.75)">
+              🇨🇦 Dólar Canadense
+            </li>
+
+            <li onclick="selectCurrency('ar','Peso Argentino','$',0.006)">
+              🇦🇷 Peso Argentino
+            </li>
+
+            <li onclick="selectCurrency('ch','Franco Suíço','CHF',5.9)">
+              🇨🇭 Franco Suíço
+            </li>
+
+            <li onclick="selectCurrency('au','Dólar Australiano','A$',3.4)">
+              🇦🇺 Dólar Australiano
+            </li>
+
+            <li onclick="selectCurrency('cn','Yuan Chinês','¥',0.72)">
+              🇨🇳 Yuan Chinês
+            </li>
+
           </ul>
         </div>
 
@@ -46,7 +66,7 @@
           <label>Valor a converter</label>
           <div class="value-input">
             <span class="currency-symbol" id="currencySymbol">R$</span>
-            <input type="number" placeholder="0,00" />
+            <input type="number" value="10.00" />
           </div>
         </div>
         <button class="btn" onclick="convert()">Converter</button>
