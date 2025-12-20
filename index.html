@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <div class="top-illustration">
+        <img src="./assents/logo.gif" alt="Money" />
+      </div>
+
+      <section class="card">
+        <div class="field currency-group">
+          <div id="from" class="currency-box">
+            <label>Converter <b>de</b></label>
+            <div class="currency-select" onclick="openList(this, 'from')">
+              <img class="flag" src="https://flagcdn.com/w40/br.png" />
+              <span>Real Brasileiro</span>
+            </div>
+          </div>
+
+          <button class="swap-btn" onclick="swapCurrencies()">⇄</button>
+
+          <div id="to" class="currency-box">
+            <label>Converter <b>para</b></label>
+            <div class="currency-select" onclick="openList(this, 'to')">
+              <img class="flag" src="https://flagcdn.com/w40/eu.png" />
+              <span>Euro</span>
+            </div>
+          </div>
+          <ul class="currency-list" id="currencyList">
+            <li onclick="selectCurrency('br','Real Brasileiro','R$',1)">
+              🇧🇷 Real Brasileiro
+            </li>
+            <li onclick="selectCurrency('us','Dólar Americano','$',5.1)">
+              🇺🇸 Dólar Americano
+            </li>
+            <li onclick="selectCurrency('eu','Euro','€',5.6)">🇪🇺 Euro</li>
+          </ul>
+        </div>
+
+        <div class="value-box">
+          <label>Valor a converter</label>
+          <div class="value-input">
+            <span class="currency-symbol" id="currencySymbol">R$</span>
+            <input type="number" placeholder="0,00" />
+          </div>
+        </div>
+        <button class="btn" onclick="convert()">Converter</button>
+
+        <div class="result hidden" id="resultBox">
+          <div class="currency">
+            <img
+              id="fromFlag"
+              class="flag"
+              src="https://flagcdn.com/w40/br.png"
+            />
+            <span id="fromValue">R$ 0,00</span>
+          </div>
+
+          <div class="arrow">⬇</div>
+
+          <div class="currency">
+            <img
+              id="toFlag"
+              class="flag"
+              src="https://flagcdn.com/w40/eu.png"
+            />
+            <span id="toValue">€ 0,00</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="arquivo.js"></script>
+</html>
