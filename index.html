@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conversor</title>
+    <title>Conversor de Moedas</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <main class="app">
       <div class="top-illustration">
@@ -31,34 +32,52 @@
               <span>Euro</span>
             </div>
           </div>
+
           <ul class="currency-list" id="currencyList">
-            <li onclick="selectCurrency('br','Real Brasileiro','R$',1)">
-              🇧🇷 Real Brasileiro
-            </li>
-            <li onclick="selectCurrency('us','Dólar Americano','$',5.1)">
-              🇺🇸 Dólar Americano
-            </li>
-            <li onclick="selectCurrency('eu','Euro','€',5.6)">🇪🇺 Euro</li>
-            <li onclick="selectCurrency('ca','Dólar Canadense','C$',3.75)">
-              🇨🇦 Dólar Canadense
-            </li>
-
-            <li onclick="selectCurrency('ar','Peso Argentino','$',0.006)">
-              🇦🇷 Peso Argentino
-            </li>
-
-            <li onclick="selectCurrency('ch','Franco Suíço','CHF',5.9)">
-              🇨🇭 Franco Suíço
-            </li>
-
-            <li onclick="selectCurrency('au','Dólar Australiano','A$',3.4)">
-              🇦🇺 Dólar Australiano
-            </li>
-
-            <li onclick="selectCurrency('cn','Yuan Chinês','¥',0.72)">
-              🇨🇳 Yuan Chinês
-            </li>
-
+            <li onclick="selectCurrency('BRL','Real Brasileiro','R$','br')">🇧🇷 Real Brasileiro</li>
+            <li onclick="selectCurrency('USD','Dólar Americano','$','us')">🇺🇸 Dólar Americano</li>
+            <li onclick="selectCurrency('EUR','Euro','€','eu')">🇪🇺 Euro</li>
+            <li onclick="selectCurrency('GBP','Libra Esterlina','£','gb')">🇬🇧 Libra Esterlina</li>
+            <li onclick="selectCurrency('JPY','Iene Japonês','¥','jp')">🇯🇵 Iene Japonês</li>
+            <li onclick="selectCurrency('CAD','Dólar Canadense','C$','ca')">🇨🇦 Dólar Canadense</li>
+            <li onclick="selectCurrency('ARS','Peso Argentino','$','ar')">🇦🇷 Peso Argentino</li>
+            <li onclick="selectCurrency('CLP','Peso Chileno','$','cl')">🇨🇱 Peso Chileno</li>
+            <li onclick="selectCurrency('MXN','Peso Mexicano','$','mx')">🇲🇽 Peso Mexicano</li>
+            <li onclick="selectCurrency('COP','Peso Colombiano','$','co')">🇨🇴 Peso Colombiano</li>
+            <li onclick="selectCurrency('CHF','Franco Suíço','CHF','ch')">🇨🇭 Franco Suíço</li>
+            <li onclick="selectCurrency('SEK','Coroa Sueca','kr','se')">🇸🇪 Coroa Sueca</li>
+            <li onclick="selectCurrency('NOK','Coroa Norueguesa','kr','no')">🇳🇴 Coroa Norueguesa</li>
+            <li onclick="selectCurrency('DKK','Coroa Dinamarquesa','kr','dk')">🇩🇰 Coroa Dinamarquesa</li>
+            <li onclick="selectCurrency('PLN','Zloty Polonês','zł','pl')">🇵🇱 Zloty Polonês</li>
+            <li onclick="selectCurrency('CNY','Yuan Chinês','¥','cn')">🇨🇳 Yuan Chinês</li>
+            <li onclick="selectCurrency('KRW','Won Sul-Coreano','₩','kr')">🇰🇷 Won Sul-Coreano</li>
+            <li onclick="selectCurrency('INR','Rúpia Indiana','₹','in')">🇮🇳 Rúpia Indiana</li>
+            <li onclick="selectCurrency('SGD','Dólar de Singapura','S$','sg')">🇸🇬 Dólar de Singapura</li>
+            <li onclick="selectCurrency('HKD','Dólar de Hong Kong','HK$','hk')">🇭🇰 Dólar de Hong Kong</li>
+            <li onclick="selectCurrency('AUD','Dólar Australiano','A$','au')">🇦🇺 Dólar Australiano</li>
+            <li onclick="selectCurrency('NZD','Dólar Neozelandês','NZ$','nz')">🇳🇿 Dólar Neozelandês</li>
+            <li onclick="selectCurrency('PEN','Sol Peruano','S/','pe')">🇵🇪 Sol Peruano</li>
+            <li onclick="selectCurrency('UYU','Peso Uruguaio','$','uy')">🇺🇾 Peso Uruguaio</li>
+            <li onclick="selectCurrency('BOB','Boliviano','Bs','bo')">🇧🇴 Boliviano</li>
+            <li onclick="selectCurrency('PYG','Guarani Paraguaio','₲','py')">🇵🇾 Guarani Paraguaio</li>
+            <li onclick="selectCurrency('CRC','Colón Costarriquenho','₡','cr')">🇨🇷 Colón Costarriquenho</li>
+            <li onclick="selectCurrency('ZAR','Rand Sul-Africano','R','za')">🇿🇦 Rand Sul-Africano</li>
+            <li onclick="selectCurrency('EGP','Libra Egípcia','£','eg')">🇪🇬 Libra Egípcia</li>
+            <li onclick="selectCurrency('MAD','Dirham Marroquino','د.م','ma')">🇲🇦 Dirham Marroquino</li>
+            <li onclick="selectCurrency('NGN','Naira Nigeriana','₦','ng')">🇳🇬 Naira Nigeriana</li>
+            <li onclick="selectCurrency('ILS','Shekel Israelense','₪','il')">🇮🇱 Shekel Israelense</li>
+            <li onclick="selectCurrency('AED','Dirham dos Emirados','د.إ','ae')">🇦🇪 Dirham dos Emirados</li>
+            <li onclick="selectCurrency('SAR','Riyal Saudita','﷼','sa')">🇸🇦 Riyal Saudita</li>
+            <li onclick="selectCurrency('QAR','Riyal Catarense','﷼','qa')">🇶🇦 Riyal Catarense</li>
+            <li onclick="selectCurrency('CZK','Coroa Tcheca','Kč','cz')">🇨🇿 Coroa Tcheca</li>
+            <li onclick="selectCurrency('HUF','Forint Húngaro','Ft','hu')">🇭🇺 Forint Húngaro</li>
+            <li onclick="selectCurrency('RON','Leu Romeno','lei','ro')">🇷🇴 Leu Romeno</li>
+            <li onclick="selectCurrency('BGN','Lev Búlgaro','лв','bg')">🇧🇬 Lev Búlgaro</li>
+            <li onclick="selectCurrency('THB','Baht Tailandês','฿','th')">🇹🇭 Baht Tailandês</li>
+            <li onclick="selectCurrency('MYR','Ringgit Malaio','RM','my')">🇲🇾 Ringgit Malaio</li>
+            <li onclick="selectCurrency('IDR','Rupia Indonésia','Rp','id')">🇮🇩 Rupia Indonésia</li>
+            <li onclick="selectCurrency('PHP','Peso Filipino','₱','ph')">🇵🇭 Peso Filipino</li>
+            <li onclick="selectCurrency('VND','Dong Vietnamita','₫','vn')">🇻🇳 Dong Vietnamita</li>
           </ul>
         </div>
 
@@ -66,34 +85,28 @@
           <label>Valor a converter</label>
           <div class="value-input">
             <span class="currency-symbol" id="currencySymbol">R$</span>
-            <input type="number" value="10.00" />
+            <input type="number" value="10" />
           </div>
         </div>
+
         <button class="btn" onclick="convert()">Converter</button>
 
         <div class="result hidden" id="resultBox">
           <div class="currency">
-            <img
-              id="fromFlag"
-              class="flag"
-              src="https://flagcdn.com/w40/br.png"
-            />
+            <img id="fromFlag" class="flag" src="https://flagcdn.com/w40/br.png" />
             <span id="fromValue">R$ 0,00</span>
           </div>
 
           <div class="arrow">⬇</div>
 
           <div class="currency">
-            <img
-              id="toFlag"
-              class="flag"
-              src="https://flagcdn.com/w40/eu.png"
-            />
+            <img id="toFlag" class="flag" src="https://flagcdn.com/w40/eu.png" />
             <span id="toValue">€ 0,00</span>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="arquivo.js"></script>
   </body>
-  <script src="arquivo.js"></script>
 </html>
