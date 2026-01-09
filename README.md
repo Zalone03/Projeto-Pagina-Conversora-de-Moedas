@@ -13,6 +13,7 @@ Um conversor de moedas moderno, responsivo e visualmente agradável, desenvolvid
 
 O projeto foca em **experiência do usuário**, com animações suaves, seleção de moedas por bandeiras e layout otimizado para dispositivos móveis. Com organização de código e boas práticas de front-end, utilizando dados reais de câmbio consumidos via API.
 
+Teste 👉 https://zalone03.github.io/Projeto-Pagina-Conversora-de-Moedas/ 👈
 ---
 
 ## ✨ Funcionalidades

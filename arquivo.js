@@ -16,9 +16,7 @@ let currencies = {
 let currentTarget = null;
 const currencyList = document.getElementById("currencyList");
 
-/* ===============================
-   CONTROLE DE LISTA
-================================ */
+
 function openList(element, target) {
   currentTarget = target;
   currencyList.style.display = "none";
@@ -26,9 +24,6 @@ function openList(element, target) {
   currencyList.style.display = "block";
 }
 
-/* ===============================
-   SELEÇÃO DE MOEDA
-================================ */
 function selectCurrency(code, name, symbol, flag) {
   currencies[currentTarget] = { code, name, symbol, flag };
 
@@ -46,9 +41,6 @@ function selectCurrency(code, name, symbol, flag) {
   convert();
 }
 
-/* ===============================
-   TROCAR MOEDAS
-================================ */
 function swapCurrencies() {
   [currencies.from, currencies.to] = [currencies.to, currencies.from];
 
@@ -68,9 +60,6 @@ function swapCurrencies() {
   convert();
 }
 
-/* ===============================
-   API DE COTAÇÃO
-================================ */
 async function fetchRate(pair) {
   const url = `https://economia.awesomeapi.com.br/json/last/${pair}`;
   const response = await fetch(url);
